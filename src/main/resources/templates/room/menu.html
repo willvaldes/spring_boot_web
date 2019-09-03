@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${title}" />
+</head>
+<body>
+
+	<h1 th:text="${title}" />
+	<ul>
+		<li><a th:href="@{/room/list(nombre='Didi',apellido='Dodo')}">
+				Ver Didi</a></li>
+		<li><a th:href="@{/room/list(nombre='Kufus',apellido='Rufus')}">
+				Ver Kufus</a></li>
+	</ul>
+	
+	<h1 th:text="${title}" />
+	<ul>
+		<li><a th:href="@{/room/list2(nombre='Didi',apellido='Dodo',edad=20)}">
+				Ver Didi</a></li>
+		<li><a th:href="@{/room/list2(nombre='Kufus',apellido='Rufus',edad=23)}">
+				Ver Kufus</a></li>
+	</ul>
+	
+	<h1 th:text="${title}" />
+	<ul>
+		<li><a th:href="@{/room/list3(nombre='Didi',apellido='Dodo',edad=20)}">
+				Ver Didi</a></li>
+		<li><a th:href="@{/room/list3(nombre='Kufus',apellido='Rufus',edad=23)}">
+				Ver Kufus</a></li>
+		<li><a th:href="@{/room/list3(nombre='Desku',apellido='Resku',edad='a')}">
+				Ver Desku</a></li>
+	</ul>
+
+
+</body>
+
+</html>

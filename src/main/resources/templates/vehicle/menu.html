@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${title}" />
+</head>
+<body>
+
+	<h1 th:text="${title}" />
+	<ul>
+		<li><a th:href="@{/vehicle/list/'ABC'/123}">
+				Ver ABC</a></li>
+		<li><a th:href="@{/vehicle/list/'XYZ'/890}">
+				Ver XYZ</a></li>
+	</ul>
+
+
+</body>
+
+</html>
